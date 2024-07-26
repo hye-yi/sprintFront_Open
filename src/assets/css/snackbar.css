@@ -1,0 +1,19 @@
+/* Snackbar.css */
+.snackbar {
+    position: fixed;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bbdefb;
+    color: #263238;
+    padding: 10px 20px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 9999;
+}
+
+.snackbar.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
